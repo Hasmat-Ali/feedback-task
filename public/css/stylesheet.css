@@ -1,0 +1,14 @@
+
+.container-fluid.header-container{margin: 0px; padding: 0px;}
+
+.profile-img{height: 40px;width: 40px;}
+.header{padding: 10px;background-color: #0c5a0c;}
+.rcv-msg{background-color: white; width: 80%;height: auto;font-size: 18px;padding: 10px;
+	font-family: 'Noto Serif', serif; border-radius: 1.4rem .3rem 1.4rem 1.4rem;}
+.send-msg{background-color: white; width: 80%;height: auto;font-size: 18px;margin-top: 10px;
+	float: right;padding: 10px;font-family: 'Noto Serif', serif;border-radius: 1.3rem 1.4rem 1.4rem .3rem;}
+.text-history{background-color: #ebeeef;padding: 10px 10px;min-height: 420px;height: 100%;}
+.container-fluid.controls{margin: 0px; padding: 0px; min-height:200px;height: 100%;overflow: scroll;}
+.well.control-area{min-height: inherit;margin-bottom: 0px;background-color: #fff;}
+.msg-send-icon{border-left-style: solid;cursor: pointer;}
+.pd-0{padding: 0px;}

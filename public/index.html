@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Application</title>
+	<!-- AngularJS library -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<!-- jQuery library -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./scripts/my_module.js"></script>
+	<link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body ng-app="myApp">
+	<div class="container-fluid header-container" ng-controller="main">
+	 	<div class="header">
+	 		<img src="./assets/avtar.png" class="img-circle profile-img" alt="profile image">
+	 	</div>
+		<div id="chat-history" class="container-fluid text-history">
+			<rcv-msg></rcv-msg>
+			<send-msg a="{{inputText}}"></send-msg>
+		</div>
+		<div class="container-fluid controls">
+			<div class="well control-area">
+				
+				<form class="form-horizontal">					 
+					  <div class="form-group has-success has-feedback">
+					    <div class="col-xs-10 col-sm-11 col-md-11 col-lg-11 pd-0">
+					      <input type="text" class="form-control" id="input-text" ng-model="inputText">
+					    </div>
+					    <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 pd-0">
+					      <button type="button" class="btn btn-primary glyphicon glyphicon glyphicon-send" ng-click="getData()"></button> 
+					    </div>
+					  </div>
+					</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
